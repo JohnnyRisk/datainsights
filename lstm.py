@@ -8,7 +8,7 @@ from keras.models import Sequential
 import matplotlib.pyplot as plt
 
 
-warnings.filterwarnings("ignore")
+#warnings.filterwarnings("ignore")
 
 def plot_results_multiple(predicted_data, true_data, prediction_len):
     fig = plt.figure(facecolor='white')
@@ -23,7 +23,7 @@ def plot_results_multiple(predicted_data, true_data, prediction_len):
     plt.show()
 
 def load_data(filename, seq_len, normalise_window):
-    f = open(filename, 'r').read()
+    f = open(filename, 'rb').read()
     data = f.split('\n')
 
     sequence_length = seq_len + 1
@@ -98,7 +98,8 @@ def predict_sequence_full(model, data, window_size):
 def predict_sequences_multiple(model, data, window_size, prediction_len):
     #Predict sequence of 50 steps before shifting prediction run forward by 50 steps
     prediction_seqs = []
-    for i in range(len(data)/prediction_len):
+    for i in range(round(len(data)/prediction_len)-1):
+        print
         curr_frame = data[i*prediction_len]
         predicted = []
         for j in range(prediction_len):

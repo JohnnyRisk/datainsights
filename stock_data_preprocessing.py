@@ -115,7 +115,7 @@ def stock_plot(data):
     #%matplotlib notebook
     #%matplotlib inline
     
-    plt.rcParams["figure.figsize"] = [16,16] 
+    #plt.rcParams["figure.figsize"] = [16,16] 
     
     ax0 = plt.subplot2grid((6,2),(0,0),rowspan=5, colspan=1)
     ax1 = plt.subplot2grid((6,2),(5,0),rowspan=1, colspan=1, sharex=ax0)
