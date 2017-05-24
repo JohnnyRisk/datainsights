@@ -7,7 +7,7 @@ This hackathon will take place over the time period of 10am – 6pm Saturday 5/2
 
 The goal of this hackathon is for me to create a public project to demonstrate both my understanding and enthusiasm for deep learning. Most people build their portfolios over their career and so there is no need for them to do this kind of hackathon unfortunately, the best examples of my work are under lock and key in the code bases of a large financial institution, so here we go!
 
-Please open stockdemo_jjr.ipynb to view the project
+Please open Deep_Factors.ipynb to view the project
 ##Dependencies
 
 * keras
@@ -15,4 +15,7 @@ Please open stockdemo_jjr.ipynb to view the project
 * numpy
 * pandas
 
+##References
+Deep Portfolio Theory by J.B. Heaton, N.G. Polson, J.H. Witte
+(https://arxiv.org/abs/1605.07230)
 
